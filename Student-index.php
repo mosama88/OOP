@@ -9,6 +9,7 @@ require_once 'Classes/Student.php';
 $student = new Student();
 $student2 = new Student();
 $student3 = new Student();
+$student4 = new Student();
 
 
 $student->name = "Mohamed";
@@ -34,4 +35,9 @@ echo "</pre>";
 
 echo "<pre>";
 var_dump($student3);
+echo "</pre>";
+
+
+echo "<pre>";
+var_dump($student4->checkData("Adgham", 50, "Primary2"));
 echo "</pre>";

@@ -18,7 +18,24 @@
 
 class Student
 {
-    private string $name;
-    private string $age;
-    private string $grade;
+    public string $name;
+    public int $age;
+    public string $grade;
+
+    const School = 'TABA';
+
+
+    public function checkData(string $name, int $age, string $grade)
+    {
+        $this->name = $name;
+        $this->age = $age;
+        $this->grade = $grade;
+
+
+
+        // constant الثوابت
+
+
+        return !empty($result) ? $result : "No conditions met"; // إرجاع النتائج أو رسالة افتراضية
+    }
 }
